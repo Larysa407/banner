@@ -13,7 +13,7 @@
   transform: translateY(0);
 }
 
-.wrapper.closed {
+.closed {
   transform: translateY(100vh);
 }
 
