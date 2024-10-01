@@ -89,7 +89,7 @@ body{
     transform: translateY(0px);
     background-image: url("../img/sneakers.png");
   }
-  45% {
+  48% {
     transform: translateY(-90px);
     visibility: hidden;
   }
@@ -99,7 +99,6 @@ body{
   }
   51% {
     transform: translateY(90px);
-    visibility: hidden;
   }
   60% {
     transform: translateY(0px);
@@ -346,9 +345,11 @@ body{
   }
   60% {
     transform: translateY(0px);
+    content: "Super Sale";
   }
   80% {
     transform: translateY(0px);
+    content: "Super Sale";
   }
   90% {
     transform: translateY(0px);
