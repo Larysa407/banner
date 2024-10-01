@@ -89,7 +89,7 @@ body{
     transform: translateY(0px);
     background-image: url("../img/sneakers.png");
   }
-  48% {
+  45% {
     transform: translateY(-90px);
     visibility: hidden;
   }
