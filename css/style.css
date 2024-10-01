@@ -293,6 +293,9 @@ body{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  -webkit-animation: combinedAnimation 5.4s ease-in-out infinite;
+  -moz-animation: combinedAnimation 5.4s ease-in-out infinite;
+  -o-animation: combinedAnimation 5.4s ease-in-out infinite;
   animation: combinedAnimation 5.4s ease-in-out infinite;
 }
 
@@ -306,7 +309,142 @@ body{
 
 .info__title::before {
   content: "Best Seller";
+  -webkit-animation: combinedAnimation 5.4s ease-in-out infinite;
+  -moz-animation: combinedAnimation 5.4s ease-in-out infinite;
+  -o-animation: combinedAnimation 5.4s ease-in-out infinite;
   animation: combinedAnimation 5.4s ease-in-out infinite;
+}
+
+@-webkit-keyframes combinedAnimation {
+  0% {
+    transform: translateY(-90px);
+  }
+  10% {
+    transform: translateY(0px);
+  }
+  20% {
+    transform: translateY(0px);
+  }
+  30% {
+    transform: translateY(0px);
+  }
+  40% {
+    transform: translateY(0px);
+  }
+  46% {
+    transform: translateY(90px);
+    visibility: hidden;
+  }
+  50% {
+    transform: translateY(-90px);
+    visibility: hidden;
+  }
+  51% {
+    transform: translateY(-90px);
+    visibility: hidden;
+  }
+  60% {
+    transform: translateY(0px);
+  }
+  80% {
+    transform: translateY(0px);
+  }
+  90% {
+    transform: translateY(0px);
+    content: "Super Sale";
+  }
+  100% {
+    transform: translateY(90px);
+    content: "Super Sale";
+  }
+}
+
+@-moz-keyframes combinedAnimation {
+  0% {
+    transform: translateY(-90px);
+  }
+  10% {
+    transform: translateY(0px);
+  }
+  20% {
+    transform: translateY(0px);
+  }
+  30% {
+    transform: translateY(0px);
+  }
+  40% {
+    transform: translateY(0px);
+  }
+  46% {
+    transform: translateY(90px);
+    visibility: hidden;
+  }
+  50% {
+    transform: translateY(-90px);
+    visibility: hidden;
+  }
+  51% {
+    transform: translateY(-90px);
+    visibility: hidden;
+  }
+  60% {
+    transform: translateY(0px);
+  }
+  80% {
+    transform: translateY(0px);
+  }
+  90% {
+    transform: translateY(0px);
+    content: "Super Sale";
+  }
+  100% {
+    transform: translateY(90px);
+    content: "Super Sale";
+  }
+}
+
+@-o-keyframes combinedAnimation {
+  0% {
+    transform: translateY(-90px);
+  }
+  10% {
+    transform: translateY(0px);
+  }
+  20% {
+    transform: translateY(0px);
+  }
+  30% {
+    transform: translateY(0px);
+  }
+  40% {
+    transform: translateY(0px);
+  }
+  46% {
+    transform: translateY(90px);
+    visibility: hidden;
+  }
+  50% {
+    transform: translateY(-90px);
+    visibility: hidden;
+  }
+  51% {
+    transform: translateY(-90px);
+    visibility: hidden;
+  }
+  60% {
+    transform: translateY(0px);
+  }
+  80% {
+    transform: translateY(0px);
+  }
+  90% {
+    transform: translateY(0px);
+    content: "Super Sale";
+  }
+  100% {
+    transform: translateY(90px);
+    content: "Super Sale";
+  }
 }
 
 @keyframes combinedAnimation {
