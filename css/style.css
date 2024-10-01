@@ -99,6 +99,7 @@ body{
   }
   51% {
     transform: translateY(90px);
+    visibility: hidden;
   }
   60% {
     transform: translateY(0px);
