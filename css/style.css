@@ -3,31 +3,34 @@
   src: url(../fonts/Roboto-Bold.ttf);
 }
 
+body{
+  height: 100vh;
+  box-sizing: border-box;
+}
+
 .wrapper {
-  max-width: 100%;
-  min-height: 100vh;
-  display: flex;
-  justify-content: end;
-  flex-direction: column; 
-  transition: transform 12s linear;
-  transform: translateY(0);
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 100%;
+  overflow: hidden;
+  transition: bottom 10s linear;
 }
 
-.closed {
-  transform: translateY(100vh);
+.wrapper.closed {
+  bottom: -100%;
 }
 
-.close-btn:after {
+.close-btn{
   display: flex;
   justify-content: end;
-  content: "\00d7";
   cursor: pointer;
 }
 
 .container {
   max-width: 100%;
   background-color: #283693;
-  box-sizing: border-box;
   height: 90px;
   font-weight: 700;
   font-family: "Roboto";
@@ -87,11 +90,11 @@
     transform: translateY(-90px);
     visibility: hidden;
   }
-  50%{
+  50% {
     transform: translateY(90px);
     visibility: hidden;
   }
-  51%{
+  51% {
     transform: translateY(90px);
   }
   60% {
@@ -173,17 +176,16 @@
     transform: translateY(90px);
     visibility: hidden;
   }
-  50%{
+  50% {
     transform: translateY(-90px);
     visibility: hidden;
   }
-  51%{
+  51% {
     transform: translateY(-90px);
     visibility: hidden;
   }
   60% {
     transform: translateY(0px);
-
   }
   80% {
     transform: translateY(0px);
@@ -368,8 +370,12 @@
 }
 
 @media (min-width: 1024px) {
-  .wrapper {
-    max-width: 1024px;
+  .wrapper{
+    min-width: 1024px;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   .left-block {
